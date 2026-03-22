@@ -14,7 +14,21 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 plugins=(
     git
-    zsh-autosuggestions
+    zsh-syntax-highlighting
+    fzf
+    wd
+    autojump
+    history-substring-search
+    sudo
+    extract
+    safe-paste
+    timer
+    web-search
+    alias-finder
+    timer
+    colored-man-pages
+    command-not-found
+    zsh-autosuggestions 
     zsh-syntax-highlighting
 )
 
@@ -48,3 +62,5 @@ setopt appendhistory
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
