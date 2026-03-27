@@ -5,7 +5,7 @@
   "margin": "6 6 0 6",
   "modules-left": ["hyprland/workspaces", "hyprland/window"],
   "modules-center": ["clock"],
-  "modules-right": ["tray",   "pulseaudio", "network", "battery" ],
+  "modules-right": ["tray",   "pulseaudio", "hyprland/language","network", "battery" ],
 
 
 
@@ -16,6 +16,10 @@
 
     }
   },
+
+"hyprland/language": {
+    "format": "  {short}"
+},
 
   "hyprland/window": {
     "max-length": 60
