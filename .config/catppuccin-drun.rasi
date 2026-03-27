@@ -1,0 +1,146 @@
+/* Catppuccin Mocha – Rofi drun config
+   Font : Departure Mono Nerd Font MONO
+   Usage: rofi -show drun -config ~/.config/rofi/catppuccin-drun.rasi
+*/
+
+/* ── Palette ─────────────────────────────────────────────────────────── */
+* {
+    base:     #1e1e2e;
+    mantle:   #181825;
+    crust:    #11111b;
+    surface0: #313244;
+    surface1: #45475a;
+    surface2: #585b70;
+    overlay0: #6c7086;
+    overlay1: #7f849c;
+    text:     #cdd6f4;
+    subtext0: #a6adc8;
+    lavender: #b4befe;
+    blue:     #89b4fa;
+    sapphire: #74c7ec;
+    sky:      #89dceb;
+    teal:     #94e2d5;
+    green:    #a6e3a1;
+    yellow:   #f9e2af;
+    peach:    #fab387;
+    maroon:   #eba0ac;
+    red:      #f38ba8;
+    mauve:    #cba6f7;
+    pink:     #f5c2e7;
+    flamingo: #f2cdcd;
+    rosewater:#f5e0dc;
+
+    /* Rofi colour vars */
+    background-color: transparent;
+    border-color:     @mauve;
+    text-color:       @text;
+    font:             "Departure Mono Nerd Font MONO 12";
+}
+
+/* ── Window ──────────────────────────────────────────────────────────── */
+window {
+    background-color: @base;
+    border:           2px solid;
+    border-color:     @mauve;
+    border-radius:    12px;
+    padding:          0;
+    width:            520px;
+}
+
+/* ── Main box ────────────────────────────────────────────────────────── */
+mainbox {
+    background-color: transparent;
+    spacing:          0;
+    children:         [ inputbar, listview ];
+    padding:          12px;
+}
+
+/* ── Input bar ───────────────────────────────────────────────────────── */
+inputbar {
+    background-color: @mantle;
+    border-radius:    8px;
+    padding:          8px 12px;
+    margin:           0 0 10px 0;
+    children:         [ prompt, entry ];
+    spacing:          6px;
+}
+
+prompt {
+    background-color: transparent;
+    text-color:       @mauve;
+    padding:          2px 0;
+}
+
+entry {
+    background-color: transparent;
+    text-color:       @text;
+    placeholder:      "Search apps…";
+    placeholder-color: @overlay0;
+    cursor:           text;
+    padding:          2px 0;
+}
+
+/* ── List view ───────────────────────────────────────────────────────── */
+listview {
+    background-color: transparent;
+    columns:          1;
+    lines:            6;
+    scrollbar:        false;
+    spacing:          4px;
+    fixed-height:     true;
+}
+
+/* ── Elements ────────────────────────────────────────────────────────── */
+element {
+    background-color: transparent;
+    border-radius:    6px;
+    padding:          8px 10px;
+    spacing:          10px;
+    orientation:      horizontal;
+    children:         [ element-icon, element-text ];
+}
+
+element-icon {
+    size:             24px;
+    background-color: transparent;
+}
+
+element-text {
+    background-color: transparent;
+    text-color:       @subtext0;
+    vertical-align:   0.5;
+}
+/* normal */
+element.normal.normal  { background-color: transparent; }
+element.normal.urgent  { background-color: transparent; text-color: @red;   }
+element.normal.active  { background-color: transparent; text-color: @green; }
+
+/* selected */
+element.selected.normal {
+    background-color: @surface0;
+    text-color:       @text;
+}
+element.selected.urgent {
+    background-color: @red;
+    text-color:       @base;
+}
+element.selected.active {
+    background-color: @green;
+    text-color:       @base;
+}
+
+
+element.alternate.normal { background-color: transparent; }
+
+/* ── Message / error ─────────────────────────────────────────────────── */
+message {
+    background-color: @surface0;
+    border-radius:    6px;
+    padding:          6px 10px;
+    margin:           10px 0 0 0;
+}
+
+textbox {
+    background-color: transparent;
+    text-color:       @yellow;
+}
