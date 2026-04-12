@@ -1,4 +1,6 @@
-yay -S waybar kitty nvim neofetch rofi
+yay -S waybar kitty nvim neofetch rofi 
+sudo pacman -S zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 cp -r ~/Downloads/hyprdots-dark/.config/nvim ~/.config
 cp -r ~/Downloads/hyprdots-dark/.config/waybar/ ~/.config
 cp -r ~/Downloads/hyprdots-dark/.config/rofi ~/.config/
