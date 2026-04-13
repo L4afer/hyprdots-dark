@@ -1,5 +1,5 @@
 require("config.lazy")
-vim.cmd.colorscheme("monochrome")
+vim.cmd.colorscheme("catppuccin")
 
 local plugin = {
 	'nvim-telescope/telescope.nvim', tag = '0,1,5',
