@@ -3,9 +3,9 @@
   "position": "top",
   "height": 32,
   "margin": "6 6 0 6",
-  "modules-left": ["hyprland/workspaces", "hyprland/window"],
+  "modules-left": ["hyprland/workspaces","hyprland/window"],
   "modules-center": ["clock"],
-  "modules-right": ["tray",   "pulseaudio", "hyprland/language","network", "battery" ],
+  "modules-right": ["tray","pulseaudio","hyprland/language","network","battery" ],
 
 
 
@@ -44,8 +44,8 @@
   },
 
   "battery": {
-    "format": "{icon} {capacity}%",
-    "format-charging": " {capacity}%",
+    "format": "{capacity}%",
+    "format-charging": "{capacity}%",
   },
 
   "tray": {
