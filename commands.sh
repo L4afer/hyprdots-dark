@@ -1,4 +1,4 @@
-yay -S waybar kitty nvim neofetch rofi 
+yay -S waybar kitty nvim neofetch rofi grim slurp wl-clipboard
 sudo pacman -S zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
